@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 0 10px;
+}
+.wrappersign{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapperf .titlef{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapperf .formf{
+  width: 100%;
+}
+
+.wrapperf .formf .inputfieldf{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapperf .formf .inputfieldf .inputf,
+.wrapper .form .inputfield .textareaf{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapperf .formf .inputfieldf.textareaf{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapperf .formf .inputfieldf .custom_selectf{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapperf .formf .inputfieldf .custom_selectf:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapperf .formf.inputfieldf .custom_selectf selectf{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapperf .formf .inputfieldf .inputf:focus,
+.wrapperf .formf .inputfieldf .textareaf:focus,
+.wrapperf .formf .inputfieldf .custom_selectf select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapperf .formf .inputfieldf p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapperf .formf .inputfieldf.check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapperf .formf .inputfieldf .check input[type="checkboxf"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapperf .formf .inputfieldf .checkf .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapperf .formf.inputfieldf .checkf .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapperf .formf .inputfieldf .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapperf .formf.inputfieldf.checkf input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapperf .formf .inputfieldf .btnf{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapperf .formf .inputfieldf .btnf:hover{
+  background: #ffd658;
+}
+
+.wrapperf .formf .inputfieldf:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapperf .formf .inputfieldf{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapperf .formf .inputfieldf label{
+    margin-bottom: 5px;
+  }
+  .wrapperf .formf .inputfieldf.terms{
+    flex-direction: row;
+  }
+}
